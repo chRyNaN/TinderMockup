@@ -6,21 +6,21 @@ import java.util.List;
  * Created by chRyNaN on 3/6/2016.
  */
 public class UserResult {
-    private List<User> results;
+    private List<ResultObject> results;
 
     public UserResult(){
 
     }
 
-    public UserResult(List<User> results){
+    public UserResult(List<ResultObject> results){
         this.results = results;
     }
 
-    public List<User> getResults() {
+    public List<ResultObject> getResults() {
         return results;
     }
 
-    public void setResults(List<User> results) {
+    public void setResults(List<ResultObject> results) {
         this.results = results;
     }
 

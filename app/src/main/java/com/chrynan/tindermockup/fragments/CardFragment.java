@@ -32,8 +32,8 @@ public class CardFragment extends Fragment {
         View v = inflater.from(container.getContext()).inflate(R.layout.card_fragment, container, false);
         cardContainer = (CardContainer) v.findViewById(R.id.card_container);
         cardContainer.setOrientation(Orientations.Orientation.Disordered);
-        //adapter = new UserCardAdapter(getContext());
-        //cardContainer.setAdapter(adapter);
+        adapter = new UserCardAdapter(getContext());
+        cardContainer.setAdapter(adapter);
         dislike = (FloatingActionButton) v.findViewById(R.id.dislike);
         superlike = (FloatingActionButton) v.findViewById(R.id.superlike);
         like = (FloatingActionButton) v.findViewById(R.id.like);
@@ -41,12 +41,30 @@ public class CardFragment extends Fragment {
         dislike.setColorNormal(getContext().getResources().getColor(R.color.tinder_red));
         dislike.setColorPressed(getContext().getResources().getColor(R.color.tinder_red));
         dislike.setIconDrawable(getContext().getResources().getDrawable(R.drawable.tinder_dislike));
+        dislike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO add logic
+            }
+        });
         superlike.setColorNormal(getContext().getResources().getColor(R.color.tinder_blue));
         superlike.setColorPressed(getContext().getResources().getColor(R.color.tinder_blue));
         superlike.setIconDrawable(getContext().getResources().getDrawable(R.drawable.superlike));
+        superlike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO add logic
+            }
+        });
         like.setColorNormal(getContext().getResources().getColor(R.color.tinder_green));
         like.setColorPressed(getContext().getResources().getColor(R.color.tinder_green));
         like.setIconDrawable(getContext().getResources().getDrawable(R.drawable.tinder_like));
+        like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO add logic
+            }
+        });
         return v;
     }
 
