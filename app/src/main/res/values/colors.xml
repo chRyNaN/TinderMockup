@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="tinder_green" type="color">#4CCC92</item>
+    <item name="tinder_red" type="color">#FF6B6B</item>
+    <item name="tinder_blue" type="color">#2DB3C9</item>
+</resources>

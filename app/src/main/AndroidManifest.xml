@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.chrynan.tindermockup">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- For logging in and sharing to Facebook. -->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <!-- For sharing links, images, or videos to Facebook. Replace APP_ID with Facebook app id. -->
+        <provider android:authorities="com.facebook.app.FacebookContentProviderAPPID"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".activities.LogInActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"/>
+    </application>
+
+</manifest>

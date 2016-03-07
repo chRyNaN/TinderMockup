@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TinderMockup</string>
+    <string name="facebook_app_id"></string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Closed</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="discovery_settings">Discovery Settings</string>
+    <string name="discovery_settings_description">Distance, age, and more</string>
+    <string name="app_settings">App Settings</string>
+    <string name="app_settings_description">Notifications, account, and more</string>
+    <string name="help">Help and Support</string>
+    <string name="help_description">FAQ, contact, and more</string>
+    <string name="feedback">Give Us Feedback</string>
+    <string name="feedback_description">Help us make youre experience better</string>
+    <string name="tinder_plus">Get Tinder Plus</string>
+    <string name="tinder_plus_description">Change your location</string>
+    <string name="view_profile">View Profile</string>
+
+    <string-array name="navigation_drawer_titles">
+        <item>Discovery Settings</item>
+        <item>App Settings</item>
+        <item>Help and Support</item>
+        <item>Give Us Feedback</item>
+        <item>Get Tinder Plus</item>
+    </string-array>
+
+    <string-array name="navigation_drawer_descriptions">
+        <item>Distance, age, and more</item>
+        <item>Notifications, account, and more</item>
+        <item>FAQ, contact, and more</item>
+        <item>Help us make your experience better</item>
+        <item>Change your location</item>
+    </string-array>
+
+</resources>
